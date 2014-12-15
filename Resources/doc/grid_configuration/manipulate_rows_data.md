@@ -105,6 +105,7 @@ $source->manipulateRow(
     {       
         // Change the output of the new column with your own code at entity.
         $row->setField('myNewColumn', $row->getEntity()->getPriceWithTax());
+        return $row;
     }
 );
 
